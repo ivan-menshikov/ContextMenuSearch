@@ -94,8 +94,8 @@ function searchOnClick(info, tab)
 	var ask_next = getItem("_asknext")=="true"? true : false;
 	var index = 1000;
 	
-	var targetURL = _all[itemindex][2].replace("TESTSEARCH", info.selectionText);
-	targetURL = targetURL.replace("%s", info.selectionText);
+	var targetURL = _all[itemindex][2].replaceAll("TESTSEARCH", info.selectionText);
+	targetURL = targetURL.replaceAll("%s", info.selectionText);
 	
 	if(ask_next)
 	{
