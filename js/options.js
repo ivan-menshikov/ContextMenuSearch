@@ -111,8 +111,8 @@ function add_item()
 	var appendListHTML = "<li index='"+curnum+"' id='listItem"+curnum+"'>\
 							<div align='center'>\
 							<div class='dragIcon'></div>\
-							<input type='text' class='listItemName' id='listItemName"+curnum+"' size='20' maxlength='300'>\
-							<input type='text' class='listItemLink' id='listItemLink"+curnum+"' size='80' maxlength='20000'>\
+							<input type='text' class='listItemName' id='listItemName"+curnum+"' size='20' maxlength='2048'>\
+							<input type='text' class='listItemLink' id='listItemLink"+curnum+"' size='80' maxlength='32768'>\
 							<input type='checkbox' class='checkStyle' id='listItemEnab"+curnum+"'>\
 							<button index="+curnum+" class='removeButtonStyle' id='listItemRemoveButton"+curnum+"'>X</button>\
 							</div></li>"
